@@ -103,8 +103,7 @@ h3 {
 }
 
 .box:hover {
-    width: 277.6px;
-    height: 67.6px;
+    margin: 0px 8px;
     transform: scale(1.1);
     box-shadow: -2px 4px 5px black;
 }
@@ -242,4 +241,5 @@ h3 {
 .logo:hover {
     box-shadow: -5px 5px 5px black;
     scale: 1.01;
+
 }
