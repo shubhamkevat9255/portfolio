@@ -11,6 +11,9 @@ hr {
     height: 5px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 nav {
     position: sticky;
@@ -140,12 +143,24 @@ h3 {
 }
 
 .resume button{
-    position: relative;
+    /* position: relative;
     left: 20px;
     background-color: rgb(192, 48, 48);
     cursor: pointer;
     height: 40px;
-    width: 100px;
+    width: 100px; */
+    background: linear-gradient(45deg, crimson, orangered);
+    color: white;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.resume button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .contact {
@@ -190,6 +205,10 @@ h3 {
     display: flex;
     align-self: center;
     border-radius: 7px;
+}
+
+.list li a:hover {
+    color: yellow;
 }
 
 .align select {
@@ -241,5 +260,45 @@ h3 {
 .logo:hover {
     box-shadow: -5px 5px 5px black;
     scale: 1.01;
+}
 
+.icons img {
+        width: 30px;
+    }
+
+@media(max-width:500px){
+    nav{
+        padding: 0px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    #photo{
+        align-self: center;
+    }
+
+    .icons img {
+        width: 20px;
+    }
+
+    .logo:active {
+    box-shadow: -5px 5px 5px black;
+    scale: 1.01;
+    }
+
+    .android {
+        display: none;
+    }
+
+    .list {
+        justify-content: flex-start; 
+        gap: 15px; 
+    }
+
+    .android {
+        display: none;
+    }
+    
 }
