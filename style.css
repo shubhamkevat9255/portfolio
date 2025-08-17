@@ -299,6 +299,16 @@ button:hover {
   margin-left: 10px;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 8px;
+  text-align: left;
+}
+
 /* actual bar */
 .progress-bar {
   background: linear-gradient(90deg, #4facfe, #00f2fe); 
@@ -366,5 +376,15 @@ summary {
     .android {
         display: none;
     }
+
+    td {
+    display: block;        /* Table cells block me aa jayenge */
+    width: 100% !important;
+  }
+  
+  .progress-container {
+    width: 100%;           /* Full width bar */
+    margin-top: 5px;       /* Thoda gap text se */
+  }
     
 }
