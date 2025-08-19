@@ -420,3 +420,9 @@ summary {
   }
     
 }
+
+@media(max-width:375){
+body {
+    width: 115vw;
+  }
+}
