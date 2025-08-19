@@ -108,3 +108,18 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     // redirect to mail client
     window.location.href = mailtoLink;
 });
+
+const mode = document.querySelector(".fa-solid");
+const body = document.querySelector("body");
+iswhite = true;
+
+mode.addEventListener("click", () => {
+    if(iswhite){
+        body.classList.remove("light");
+        body.classList.add("dark");
+    }else{
+        body.classList.remove("dark");
+        body.classList.add("light");
+    }
+    iswhite = !iswhite;
+});
