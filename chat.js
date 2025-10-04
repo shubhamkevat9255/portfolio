@@ -68,11 +68,11 @@ let scroll = document.querySelector(".scroll");
 
 
 let texts = [
-    "Passionate BCA Student 🧑‍🎓",
-    "Cyber Networks and Cyber Security 🧑‍💻",
-    "Web Dev Learner 🚀",
-    "Database Explorer 📊",
-    "Frontend Developer 🌐"
+    "Passionate\u00A0BCA\u00A0Student\u00A0🧑‍🎓",
+    "Cyber \u00A0Networks\u00A0and\u00A0Cyber\u00A0Security\u00A0🧑‍💻",
+    "Web\u00A0Dev\u00A0Learner\u00A0🚀",
+    "Database\u00A0Explorer\u00A0📊",
+    "Frontend\u00A0Developer\u00A0🌐"
 ];
 
 let index = 0;
@@ -123,3 +123,4 @@ mode.addEventListener("click", () => {
     }
     iswhite = !iswhite;
 });
+
